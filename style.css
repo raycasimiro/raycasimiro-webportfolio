@@ -32,11 +32,11 @@ p {
     padding-top: 2.1rem;
 }
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
     .modal {
         padding-top: 4.3rem;
     }
-}
+}*/
 
 .rc-wrapper-gallery {
     max-width: 900px;
