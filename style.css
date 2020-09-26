@@ -1,7 +1,7 @@
 body {
     font-family: Lato, sans-serif;
     background-color: #000000;
-    padding-top: 8rem;
+    padding-top: 6rem;
 }
 
 h4 {
@@ -42,23 +42,12 @@ p {
 .rc-navbar {
     min-height: 4.5rem;
     background-color: black;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: .5px;
 }
 
-.rc-navbar-glass {
-    min-height: 2.5rem;
-    background-color: rgba(0,0,0,.7);
-    font-weight: 400;
-    letter-spacing: .5px;
-    overflow: auto;
-    white-space: nowrap;
-}
-
-
-.rc-main-navbar {
-  border-bottom: 1px solid #1c1c1e;
-  background-color: black;
+.rc-navbar-container {
+    border-bottom: 1px solid #1c1c1e;
 }
 
 .rc-navbar-container-inner {
@@ -195,15 +184,4 @@ p {
 
 .dropdown-divider {
     border-color: rgba(255, 255, 255, .1);
-}
-
-/*2nd nav*/
-.smart-scroll{
-  z-index: -1;
-}
-.scrolled-down{
-   transform:translateY(-100%); transition: all 0.3s ease-in-out;
-}
-.scrolled-up{
-   transform:translateY(0); transition: all 0.3s ease-in-out;
 }
