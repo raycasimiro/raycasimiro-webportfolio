@@ -1,5 +1,8 @@
 // external js: isotope.pkgd.js
-
+var $grid = $('.grid').isotope({
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
 // filter functions
 var filterFns = {
   // show if number is greater than 50
