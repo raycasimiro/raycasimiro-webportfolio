@@ -25,7 +25,7 @@ function getHashFilter() {
 }
 
 // init Isotope
-var $grid = $('.grid');
+//var $grid = $('.grid');
 
 // bind filter button click
 var $filterButtonGroup = $('.filter-button-group');
