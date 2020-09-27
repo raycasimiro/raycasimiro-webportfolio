@@ -61,3 +61,7 @@ $(window).on( 'hashchange', onHashchange );
 
 // trigger event handler to init Isotope
 onHashchange();
+
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
