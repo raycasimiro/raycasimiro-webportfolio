@@ -35,28 +35,41 @@
                 </button>
 
                 <!-- Menu -->
-                <div class="navbar-collapse collapse" id="collapsingNavbar">
+                <div class="navbar-collapse collapse blur" id="collapsingNavbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item dropdown mt-1 mt-md-0 mb-1 mb-md-0">
+                        <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0 d-block d-sm-block d-md-none d-lg-none d-xl-none">
+                            <a class="nav-link" href="#filter=*">All</a>
+                        </li>
+                        <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0 d-block d-sm-block d-md-none d-lg-none d-xl-none">
+                            <a class="nav-link" href="#filter=.graphic-design">Graphic Design</a>
+                        </li>
+                         <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0 d-block d-sm-block d-md-none d-lg-none d-xl-none">
+                            <a class="nav-link" href="#filter=.illustration">Illustration</a>
+                        </li>
+                         <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0 d-block d-sm-block d-md-none d-lg-none d-xl-none">
+                            <a class="nav-link" href="#filter=.animation">Animation</a>
+                        </li>
+                         <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0 d-block d-sm-block d-md-none d-lg-none d-xl-none">
+                            <a class="nav-link" href="#filter=.web-dev">Web Development</a>
+                        </li>
+                        <li class="nav-item dropdown mt-1 mt-md-0 mb-1 mb-md-0 d-none d-md-block d-lg-block d-xl-block">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Work
                             </a>
-                            <div class="dropdown-menu rc-dropdown-menu rounded-0" aria-labelledby="navbarDropdownMenuLink" data-reference="parent">
-                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0" href="#">Selected</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0" href="#">Branding</a>
-                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0" href="#">3D Art</a>
-                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0" href="#">Illustration</a>
-                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0" href="#">Digital Painting</a>
-                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0" href="#">Animation</a>
+                            <div class="dropdown-menu rc-dropdown-menu rounded-0 filters-menu" aria-labelledby="navbarDropdownMenuLink" data-reference="parent">
+                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0" href="#filter=*">All</a>
+                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0" href="#filter=.graphic-design">Graphic Design</a>
+                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0" href="#filter=.illustration">Illustration</a>
+                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0" href="#filter=.animation">Animation</a>
+                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0" href="#filter=.web-dev">Web Development</a>
                             </div>
                         </li>
                         <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0">
-                            <a class="nav-link" href="">About</a>
+                            <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0">
 
-                            <a class="nav-link" href="">Contact</a>
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
 
@@ -90,9 +103,9 @@
     </div>
 
     <div class="container-fluid rc-wrapper-gallery mx-auto">
-        <div class="row">
-            <div class="col-6 col-md-4 col-lg-3 px-0 rc-gallery-item-overlay">
-                <img src="images/gallery/img-thumb001.png" class="img-fluid rc-thumb-wrapper">
+        <div class="row grid">
+            <div class="col-6 col-md-4 col-lg-3 px-0 rc-gallery-item-overlay grid-item illustration">
+                <img src="images/gallery/img-thumb001.png " class="img-fluid rc-thumb-wrapper">
                 <div class="rc-gallery-item-overlay-inner p-3">
                     <h4 class="rc-gallery-item-overlay-text" unselectable="on">
                         Voronoi Spherical Lamp</h4>
@@ -100,14 +113,14 @@
             </div>
 
 
-            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay">
+            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay grid-item illustration">
                 <img src="images/gallery/img-thumb002.png" class="img-fluid rc-thumb-wrapper">
                 <div class="rc-gallery-item-overlay-inner p-3">
                     <h4 class="rc-gallery-item-overlay-text" unselectable="on">
                         Keep an Eye</h4>
                 </div>
             </div>
-            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay">
+            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay grid-item graphic-design">
                 <img src="images/gallery/img-thumb003.png" class="img-fluid rc-thumb-wrapper">
                 <div class="rc-gallery-item-overlay-inner p-3">
                     <h4 class="rc-gallery-item-overlay-text" unselectable="on">
@@ -115,43 +128,64 @@
                 </div>
             </div>
 
-            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay">
+            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay grid-item web-dev animation">
                 <img src="images/gallery/img-thumb004.png" class="img-fluid">
                 <div class="rc-gallery-item-overlay-inner p-3">
                     <h4 class="rc-gallery-item-overlay-text" unselectable="on">
                         Let Your Imagination Set Sail</h4>
                 </div>
             </div>
-            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay">
+            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay grid-item graphic-design">
                 <img src="images/gallery/img-thumb005.png" class="img-fluid">
                 <div class="rc-gallery-item-overlay-inner p-3">
                     <h4 class="rc-gallery-item-overlay-text" unselectable="on">
                         Charisse 3D Avatar</h4>
                 </div>
             </div>
-            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay">
+            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay grid-item illustration animation">
                 <img src="images/gallery/img-thumb006.png" class="img-fluid">
                 <div class="rc-gallery-item-overlay-inner p-3">
                     <h4 class="rc-gallery-item-overlay-text" unselectable="on">
                         Cuphead and Mugman</h4>
                 </div>
             </div>
-            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay">
+            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay grid-item web-dev">
                 <img src="images/gallery/img-thumb007.png" class="img-fluid">
                 <div class="rc-gallery-item-overlay-inner p-3">
                     <h4 class="rc-gallery-item-overlay-text" unselectable="on">
                         Sole Mates</h4>
                 </div>
             </div>
-            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay">
+            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay grid-item illustration">
                 <img src="images/gallery/img-thumb008.png" class="img-fluid">
                 <div class="rc-gallery-item-overlay-inner p-3">
                     <h4 class="rc-gallery-item-overlay-text" unselectable="on">
                         The New Normal</h4>
                 </div>
             </div>
-            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay">
+            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay grid-item illustration animation">
                 <img src="images/gallery/img-thumb009.png" class="img-fluid">
+                <div class="rc-gallery-item-overlay-inner p-3">
+                    <h4 class="rc-gallery-item-overlay-text" unselectable="on">
+                        Crab Mentality</h4>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay grid-item illustration web-dev">
+                <img src="images/gallery/img-thumb010.png" class="img-fluid">
+                <div class="rc-gallery-item-overlay-inner p-3">
+                    <h4 class="rc-gallery-item-overlay-text" unselectable="on">
+                        Crab Mentality</h4>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay grid-item">
+                <img src="images/gallery/img-thumb011.png" class="img-fluid">
+                <div class="rc-gallery-item-overlay-inner p-3">
+                    <h4 class="rc-gallery-item-overlay-text" unselectable="on">
+                        Crab Mentality</h4>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 px-0 col-lg-3 rc-gallery-item-overlay grid-item web-dev">
+                <img src="images/gallery/img-thumb012.png" class="img-fluid">
                 <div class="rc-gallery-item-overlay-inner p-3">
                     <h4 class="rc-gallery-item-overlay-text" unselectable="on">
                         Crab Mentality</h4>
@@ -159,11 +193,21 @@
             </div>
         </div>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!--Isotope JS-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!--Custom JS-->
+    <script src="script.js"></script>
+    
+    <script>
+   
+    </script>
 
 </body>
 

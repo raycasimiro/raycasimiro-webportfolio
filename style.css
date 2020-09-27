@@ -52,7 +52,7 @@ p {
 
 .rc-navbar-container {
     /*border-bottom: 1px solid #1c1c1e;*/
-    background-color: rgba(0,0,0,.78);
+    background-color: rgba(0, 0, 0, .78);
     border-bottom: 1px solid rgba(255, 255, 255, .15);
 }
 
@@ -175,7 +175,7 @@ p {
 }
 
 .rc-dropdown-menu {
-    background-color: rgba(28,28,30,1);
+    background-color: rgba(28, 28, 30, 1);
 }
 
 .rc-dropdown-item {
@@ -189,4 +189,14 @@ p {
 
 .dropdown-divider {
     border-color: rgba(255, 255, 255, .1);
+}
+
+.menu-icons {
+    fill: #ffffff;
+    max-width: 20px;
+    margin-right: 3px;
+}
+
+.grid-item {
+    width: 100%;
 }
