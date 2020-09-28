@@ -1,8 +1,14 @@
 // external js: isotope.pkgd.js
+
+
+$(window).load(function(){
 var $grid = $('.grid').isotope({
   itemSelector: '.grid-item',
   layoutMode: 'fitRows'
 });
+});
+
+
 // filter functions
 var filterFns = {
   // show if number is greater than 50
@@ -17,11 +23,10 @@ var filterFns = {
   }
 };
 
-$( document ).ready(function() {
-    console.log( "ready!" );
-     window.location.hash = "filter=*";
-        e.preventDefault();
-});
+//$( document ).ready(function() {
+//    console.log( "ready!" );
+ //    window.location.hash = "filter=*";
+//});
 
 function getHashFilter() {
   // get filter=filterName
