@@ -131,6 +131,7 @@ p {
 }
 
 .blur-filter {
+    -webkit-backdrop-filter:saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
 }
 
