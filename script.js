@@ -1,20 +1,10 @@
 // external js: isotope.pkgd.js
-
-
-
 var $grid = $('.grid').imagesLoaded(function () {
     $grid.isotope({
         itemSelector: '.grid-item',
         layoutMode: 'fitRows'
     });
 });
-
-
-//var $grid = $('.grid').isotope({
-//itemSelector: '.grid-item',
-//  layoutMode: 'fitRows'
-//});
-
 
 // filter functions
 var filterFns = {
@@ -30,10 +20,9 @@ var filterFns = {
     }
 };
 
-$(document).ready(function () {
-    console.log("ready!");
-    window.location.hash = "filter=*";
-});
+//$(document).ready(function () {
+//    window.location.hash = "filter=*";
+//});
 
 function getHashFilter() {
     // get filter=filterName
@@ -41,9 +30,6 @@ function getHashFilter() {
     var hashFilter = matches && matches[1];
     return hashFilter && decodeURIComponent(hashFilter);
 }
-
-// init Isotope
-//var $grid = $('.grid');
 
 // bind filter button click
 var $filterButtonGroup = $('.filter-button-group');
