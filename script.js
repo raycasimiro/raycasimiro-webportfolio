@@ -17,6 +17,12 @@ var filterFns = {
   }
 };
 
+$( document ).ready(function() {
+    console.log( "ready!" );
+     window.location.hash = "filter=*";
+        e.preventDefault();
+});
+
 function getHashFilter() {
   // get filter=filterName
   var matches = location.hash.match( /filter=([^&]+)/i );
