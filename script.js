@@ -6,7 +6,6 @@ var $grid = $('.grid').isotope({
   itemSelector: '.grid-item',
   layoutMode: 'fitRows'
 });
-});
 
 
 // filter functions
@@ -75,4 +74,7 @@ onHashchange();
 
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
+});
+
+
 });
