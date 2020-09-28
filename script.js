@@ -1,7 +1,6 @@
 // external js: isotope.pkgd.js
 
 
-$(window).load(function(){
 var $grid = $('.grid').isotope({
   itemSelector: '.grid-item',
   layoutMode: 'fitRows'
@@ -74,7 +73,4 @@ onHashchange();
 
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
-});
-
-
 });
