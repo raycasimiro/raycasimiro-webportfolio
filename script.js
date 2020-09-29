@@ -2,6 +2,7 @@
 var $grid = $('.grid').imagesLoaded(function () {
     $grid.isotope({
         itemSelector: '.grid-item',
+        percentPosition: true,
         layoutMode: 'fitRows'
     });
 });
@@ -41,6 +42,7 @@ $filterButtonGroup.on('click', 'button', function () {
 
 var isIsotopeInit = false;
 
+
 function onHashchange() {
     var hashFilter = getHashFilter();
     if (!hashFilter && isIsotopeInit) {
@@ -58,6 +60,30 @@ function onHashchange() {
     if (hashFilter) {
         $filterButtonGroup.find('.is-checked').removeClass('is-checked');
         $filterButtonGroup.find('[data-filter="' + hashFilter + '"]').addClass('is-checked');
+
+        if (hashFilter == "*") {
+            $('#pageTitle').text("Selected");
+            $("#pageIcon").attr("src", "images/icons/star.svg");
+        }
+
+        if (hashFilter == ".graphic-design") {
+            $('#pageTitle').text("Graphic Design");
+            $("#pageIcon").attr("src", "images/icons/gfx.svg");
+        }
+
+        if (hashFilter == ".illustration") {
+ $('#pageTitle').text("Illustration");
+             $("#pageIcon").attr("src", "images/icons/illu.svg");
+        }
+        if (hashFilter == ".animation"){
+            $('#pageTitle').text("Animation");
+             $("#pageIcon").attr("src", "images/icons/anim.svg");
+        }
+        if (hashFilter == ".web-dev")
+            {
+            $('#pageTitle').text("Web Development");
+             $("#pageIcon").attr("src", "images/icons/webd.svg");
+        }
     }
 }
 
