@@ -53,9 +53,12 @@ p {
 
 .rc-navbar-container {
     /*border-bottom: 1px solid #1c1c1e;*/
-    background-color: rgba(0, 0, 0, .85);
+    background-color: rgba(0, 0, 0, .75);
     border-bottom: 1px solid rgba(255, 255, 255, .15);
 }
+
+.no-backdropfilter 
+.backdropfilter{  background-color: rgba(0, 0, 0, 1); }
 
 .rc-navbar-container-inner {
     max-width: 1150px;
