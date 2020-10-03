@@ -40,6 +40,17 @@ p {
     font-size: 13px;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: #dddddd;
+    
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff;
+opacity: 1;
+}
+
 .rc-navbar {
     min-height: 4.5rem;
     font-weight: 400;
@@ -154,7 +165,7 @@ p {
     transition: opacity .3s linear;
 }
 
-.rc-gallery-item-overlay:hover .rc-gallery-item-overlay-inner {
+.rc-gallery-item-overlay .rc-gallery-item-overlay-inner:hover {
     opacity: 1;
 }
 

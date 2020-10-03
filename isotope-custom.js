@@ -7,6 +7,11 @@ var $grid = $('.grid').imagesLoaded(function () {
     });
 });
 
+// reveal all items after init
+var $items = $grid.find('.grid-item');
+$grid.addClass('is-showing-items')
+  .isotope( 'revealItemElements', $items );
+
 // filter functions
 var filterFns = {
     // show if number is greater than 50
@@ -20,10 +25,6 @@ var filterFns = {
         return name.match(/ium$/);
     }
 };
-
-//$(document).ready(function () {
-//    window.location.hash = "filter=*";
-//});
 
 function getHashFilter() {
     // get filter=filterName
@@ -42,13 +43,15 @@ $filterButtonGroup.on('click', 'button', function () {
 
 var isIsotopeInit = false;
 
-
 function onHashchange() {
+
+
     var hashFilter = getHashFilter();
     if (!hashFilter && isIsotopeInit) {
         return;
     }
     isIsotopeInit = true;
+    
     // filter isotope
     $grid.isotope({
         itemSelector: '.grid-item',
@@ -56,6 +59,8 @@ function onHashchange() {
         // use filterFns
         filter: filterFns[hashFilter] || hashFilter
     });
+
+   
     // set selected class on button
     if (hashFilter) {
         $filterButtonGroup.find('.is-checked').removeClass('is-checked');
@@ -71,7 +76,7 @@ function onHashchange() {
         }
 
         if (hashFilter == ".illustration") {
- $('#pageTitle').text("Illustration");
+            $('#pageTitle').text("Illustration");
         }
         if (hashFilter == ".animation"){
             $('#pageTitle').text("Animation");
@@ -87,7 +92,3 @@ $(window).on('hashchange', onHashchange);
 
 // trigger event handler to init Isotope
 onHashchange();
-
-$('.navbar-nav>li>a').on('click', function () {
-    $('.navbar-collapse').collapse('hide');
-});
