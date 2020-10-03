@@ -1,11 +1,17 @@
 // external js: isotope.pkgd.js
-var $grid = $('.grid').imagesLoaded(function () {
+/*var $grid = $('.grid').imagesLoaded(function () {
     $grid.isotope({
         itemSelector: '.grid-item',
         percentPosition: true,
         layoutMode: 'fitRows'
     });
-});
+});*/
+
+var $grid = $('.grid').isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    layoutMode: 'fitRows'
+  });
 
 // reveal all items after init
 var $items = $grid.find('.grid-item');
