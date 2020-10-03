@@ -136,8 +136,7 @@ p {
 }
 
 /* GALLERT ITEM OVERLAY */
-.rc-gallery-item-overlay {}
-
+.rc-gallery-item-overlay
 .rc-gallery-item-overlay-inner {
     position: absolute;
     top: 0;
@@ -150,7 +149,6 @@ p {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-
     /* transition effect. not necessary */
     -webkit-transition: opacity .3s linear;
     transition: opacity .3s linear;
