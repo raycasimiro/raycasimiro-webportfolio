@@ -1,22 +1,24 @@
 // external js: isotope.pkgd.js
-/*var $grid = $('.grid').imagesLoaded(function () {
+var $grid = $('.grid').imagesLoaded(function () {
     $grid.isotope({
         itemSelector: '.grid-item',
         percentPosition: true,
         layoutMode: 'fitRows'
     });
-});*/
+});
 
+/*
 var $grid = $('.grid').isotope({
     itemSelector: '.grid-item',
     percentPosition: true,
     layoutMode: 'fitRows'
   });
 
-// reveal all items after init
+  // reveal all items after init
 var $items = $grid.find('.grid-item');
 $grid.addClass('is-showing-items')
   .isotope( 'revealItemElements', $items );
+*/
 
 // filter functions
 var filterFns = {
@@ -98,3 +100,4 @@ $(window).on('hashchange', onHashchange);
 
 // trigger event handler to init Isotope
 onHashchange();
+
