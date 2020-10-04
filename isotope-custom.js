@@ -59,7 +59,7 @@ function onHashchange() {
         return;
     }
     isIsotopeInit = true;
-    
+
     // filter isotope
     $grid.isotope({
         itemSelector: '.grid-item',
@@ -68,13 +68,13 @@ function onHashchange() {
         filter: filterFns[hashFilter] || hashFilter
     });
 
-   
+
     // set selected class on button
     if (hashFilter) {
         $filterButtonGroup.find('.is-checked').removeClass('is-checked');
         $filterButtonGroup.find('[data-filter="' + hashFilter + '"]').addClass('is-checked');
-        
-        
+
+
         if (hashFilter == "*") {
             $('#pageTitle').text("Selected Work");
         }
@@ -86,11 +86,10 @@ function onHashchange() {
         if (hashFilter == ".illustration") {
             $('#pageTitle').text("Illustration");
         }
-        if (hashFilter == ".animation"){
+        if (hashFilter == ".animation") {
             $('#pageTitle').text("Animation");
         }
-        if (hashFilter == ".web-dev")
-            {
+        if (hashFilter == ".web-dev") {
             $('#pageTitle').text("Web Development");
         }
     }
@@ -100,4 +99,3 @@ $(window).on('hashchange', onHashchange);
 
 // trigger event handler to init Isotope
 onHashchange();
-

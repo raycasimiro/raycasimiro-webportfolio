@@ -13,11 +13,12 @@ h4,h5 {
 }
 
 p {
-    color: rgba(225, 225, 225, .8);
+    color: rgba(225, 225, 225, .95);
     font-size: 14px;
     font-weight: 300;
     line-height: 1.3rem;
-    letter-spacing: .03rem;
+    letter-spacing: .02rem;
+    line-height: 25px;
 }
 
 @media (min-width: 768px) {
@@ -32,6 +33,11 @@ p {
 
 .rc-wrapper-gallery {
     max-width: 1140px;
+}
+
+.newItem
+{
+    $border: 1px solid white;
 }
 
 .nav-item,
@@ -58,7 +64,7 @@ p {
 
 @media (max-width: 767.98px) {  
     .navbar-dark .navbar-nav .nav-link {
-        font-size: 1rem;
+        font-size: .9rem;
         font-weight: 300;
     }
     .rc-navbar-icons{
@@ -200,6 +206,11 @@ p {
     left: 1.2rem;
     right: 2.5rem;
     transition: opacity 0.3s ease-in-out 0s;
+}
+
+.rc-gallery-item-back-arrow
+{
+    width: 5.5rem;
 }
 
 .rc-gallery-item-overlay-arrow {
