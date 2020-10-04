@@ -5,7 +5,8 @@ body {
     overflow-y: scroll;
 }
 
-h4,h5 {
+h4,
+h5 {
     line-height: 1.2;
     color: #ffffff;
     letter-spacing: .03rem;
@@ -35,10 +36,16 @@ p {
     max-width: 1140px;
 }
 
-.newItem
-{
-    $border: 1px solid white;
+.newItem {
+    border: 0;
 }
+
+.img-gallery-ph
+{
+    background: url('gallery/phblack.svg');
+    background-size: 586px;
+}
+
 
 .nav-item,
 .nav-link,
@@ -52,22 +59,24 @@ p {
     opacity: 0.7;
     transition: 0.3s;
 }
+
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #ffffff;
     opacity: 1;
 }
 
-.rc-navbar-icons{
+.rc-navbar-icons {
     min-width: 15px;
     min-height: 15px;
 }
 
-@media (max-width: 767.98px) {  
+@media (max-width: 767.98px) {
     .navbar-dark .navbar-nav .nav-link {
         font-size: .9rem;
         font-weight: 300;
     }
-    .rc-navbar-icons{
+
+    .rc-navbar-icons {
         min-width: 20px;
         min-height: 20px;
     }
@@ -90,8 +99,9 @@ p {
     border-bottom: 1px solid rgba(255, 255, 255, .15);
 }
 
-.no-backdropfilter 
-.backdropfilter{  background-color: rgba(0, 0, 0, 1); }
+.no-backdropfilter .backdropfilter {
+    background-color: rgba(0, 0, 0, 1);
+}
 
 .rc-navbar-container-inner {
     max-width: 1150px;
@@ -147,7 +157,7 @@ p {
     transition: all 0.2s;
 }
 
-.navbar-toggler.x .icon-bar + .icon-bar {
+.navbar-toggler.x .icon-bar+.icon-bar {
     margin-top: 4px;
 }
 
@@ -169,8 +179,7 @@ p {
 }
 
 /* GALLERT ITEM OVERLAY */
-.rc-gallery-item-overlay
-.rc-gallery-item-overlay-inner {
+.rc-gallery-item-overlay .rc-gallery-item-overlay-inner {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -208,8 +217,7 @@ p {
     transition: opacity 0.3s ease-in-out 0s;
 }
 
-.rc-gallery-item-back-arrow
-{
+.rc-gallery-item-back-arrow {
     width: 5.5rem;
 }
 
@@ -261,11 +269,11 @@ p {
     width: 100%;
 }
 
-.dropdown:hover > .dropdown-menu {
+.dropdown:hover>.dropdown-menu {
     display: block;
 }
 
-.dropdown > .dropdown-toggle:active {
+.dropdown>.dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
