@@ -7,19 +7,6 @@ var $grid = $('.grid').imagesLoaded(function () {
     });
 });
 
-/*
-var $grid = $('.grid').isotope({
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    layoutMode: 'fitRows'
-  });
-
-  // reveal all items after init
-var $items = $grid.find('.grid-item');
-$grid.addClass('is-showing-items')
-  .isotope( 'revealItemElements', $items );
-*/
-
 // filter functions
 var filterFns = {
     // show if number is greater than 50
