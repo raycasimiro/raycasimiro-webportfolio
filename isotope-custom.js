@@ -1,5 +1,14 @@
 // external js: isotope.pkgd.js
-var $grid = $('.grid').imagesLoaded(function () {
+/*var $grid = $('.grid').imagesLoaded(function () {
+    $grid.isotope({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        layoutMode: 'fitRows'
+    });
+});*/
+
+var $grid = $('.grid');
+$grid.imagesLoaded(function () {
     $grid.isotope({
         itemSelector: '.grid-item',
         percentPosition: true,
