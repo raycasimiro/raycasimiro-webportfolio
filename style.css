@@ -277,3 +277,57 @@ p {
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
+
+
+/* ===============FLICKITY============== */
+
+.scrollable {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none;
+}
+
+
+.category-item {
+    padding: 13px 16px 12px;
+    border: 1px solid #ffffff;
+    border-radius: 46px;
+    font-size: 13px;
+}
+
+.category-item:not(:last-child) {
+    /*border-right: 1px solid rgba(114, 124, 135, .2);*/
+    margin-right: .5rem;
+}
+
+/* selected btn css */
+.btn-group-toggle .btn:not(:disabled):not(.disabled).active,
+.btn-group-toggle .btn:not(:disabled):not(.disabled):active,
+.show > .btn.dropdown-toggle {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* non selected btn css */
+.btn-group-toggle .btn {
+    color: #fff;
+    background-color: transparent;
+    border-color: gray;
+    $padding: 20px 30px;
+    border-radius: 0;
+}
+
+
+.category-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* ============================== */

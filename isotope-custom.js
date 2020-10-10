@@ -1,14 +1,7 @@
 // external js: isotope.pkgd.js
-/*var $grid = $('.grid').imagesLoaded(function () {
-    $grid.isotope({
-        itemSelector: '.grid-item',
-        percentPosition: true,
-        layoutMode: 'fitRows'
-    });
-});*/
 
-var $grid = $('.grid');
-$grid.imagesLoaded(function () {
+//init isotope
+var $grid = $('.grid').imagesLoaded(function () {
     $grid.isotope({
         itemSelector: '.grid-item',
         percentPosition: true,
@@ -48,7 +41,6 @@ $filterButtonGroup.on('click', 'button', function () {
 var isIsotopeInit = false;
 
 function onHashchange() {
-
 
     var hashFilter = getHashFilter();
     if (!hashFilter && isIsotopeInit) {
