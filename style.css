@@ -311,7 +311,6 @@ p {
 
 .category-item:not(:last-child) {
     /*border-right: 1px solid rgba(114, 124, 135, .2);*/
-    margin-right: .8rem;
 }
 
 .category-item {
