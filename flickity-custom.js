@@ -11,11 +11,11 @@ if (!is_touch_device())
   for ( var i = 0, length = navs.length; i < length; i++ ) {
     var nav = navs[i];
     new Flickity( nav, {
-      cellAlign: 'left',
+      cellAlign: 'center',
       freeScroll: true,
       prevNextButtons: false,
       pageDots: false,
-      contain: true
+      contain: true,
     });
   }
 }
