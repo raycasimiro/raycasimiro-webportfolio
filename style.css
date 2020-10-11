@@ -326,7 +326,7 @@ p {
     top: 0;
     bottom: 0;
     z-index: 1;
-    min-width: 5rem;
+    min-width: 2.5rem;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
 }
