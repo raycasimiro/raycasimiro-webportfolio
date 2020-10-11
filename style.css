@@ -280,12 +280,15 @@ p {
 
 /* ===============FLICKITY============== */
 
+
+
 .scrollable {
     white-space: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     scrollbar-width: none;
+    content: 'flickity';
 }
 
 .scrollable::-webkit-scrollbar {
