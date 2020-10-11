@@ -286,6 +286,7 @@ p {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: none;
 }
 
 .scrollable::-webkit-scrollbar {
@@ -312,9 +313,6 @@ p {
     /*border-right: 1px solid rgba(114, 124, 135, .2);*/
     margin-right: .5rem;
 }
-
-
-
 
 .category-item {
     display: inline-block;
