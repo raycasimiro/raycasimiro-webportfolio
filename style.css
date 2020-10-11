@@ -323,12 +323,12 @@ p {
     pointer-events: none;
     position: absolute;
     right: 0;
-    top:0;
+    top: 0;
     bottom: 0;
     z-index: 1;
-    min-width: 4.5rem;
+    min-width: 5rem;
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.4) 50%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
 }
 
 
