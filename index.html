@@ -52,42 +52,12 @@
                 <!-- Menu -->
                 <div class="navbar-collapse collapse blur" id="collapsingNavbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0 d-block d-sm-block d-md-none d-lg-none d-xl-none">
-                            <a class="nav-link" href="#filter=*">Selected</a>
-                        </li>
-                        <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0 d-block d-sm-block d-md-none d-lg-none d-xl-none">
-                            <a class="nav-link" href="#filter=.graphic-design">Graphic Design</a>
-                        </li>
-                        <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0 d-block d-sm-block d-md-none d-lg-none d-xl-none">
-                            <a class="nav-link" href="#filter=.illustration">Illustration</a>
-                        </li>
-                        <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0 d-block d-sm-block d-md-none d-lg-none d-xl-none">
-                            <a class="nav-link" href="#filter=.animation">Animation</a>
-                        </li>
-                        <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0 d-block d-sm-block d-md-none d-lg-none d-xl-none">
-                            <a class="nav-link" href="#filter=.web-dev">Web Development</a>
-                        </li>
+                        
                         <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0 d-block d-sm-block d-md-none d-lg-none d-xl-none">
                             <div class="dropdown-divider"></div>
                         </li>
-                        <li class="nav-item dropdown mt-1 mt-md-0 mb-1 mb-md-0 d-none d-md-block d-lg-block d-xl-block">
-                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" aria-haspopup="true"
-                                aria-expanded="false">
-                                Work
-                            </a>
-                            <div class="dropdown-menu rc-dropdown-menu rounded-0 mt-0"
-                                aria-labelledby="navbarDropdownMenuLink" data-reference="parent">
-                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0"
-                                    href="#filter=*">Selected</a>
-                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0"
-                                    href="#filter=.graphic-design">Graphic Design</a>
-                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0"
-                                    href="#filter=.illustration">Illustration</a>
-                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0"
-                                    href="#filter=.animation">Animation</a>
-                                <a class="dropdown-item rc-dropdown-item py-2 mt-1 mt-md-0 mb-1 mb-md-0"
-                                    href="#filter=.web-dev">Web Development</a>
-                            </div>
+                        <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0">
+                            <a class="nav-link" href="#">Work</a>
                         </li>
 
                         <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0">
@@ -133,31 +103,13 @@
         <div class="row">
             <div class="col-12 px-3 px-lg-0 py-5">
                 <div class="scrollable mx-auto">
-                    <!--
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-secondary active shadow-none">
-                            <input type="radio" name="options" id="option1" checked> Selected
-                        </label>
-                        <label class="btn btn-secondary shadow-none">
-                            <input type="radio" name="options" id="option2"> Graphic Design
-                        </label>
-                        <label class="btn btn-secondary shadow-none">
-                            <input type="radio" name="options" id="option3"> Illustration
-                        </label>
-                        <label class="btn btn-secondary shadow-none">
-                            <input type="radio" name="options" id="option4"> Animation
-                        </label>
-                        <label class="btn btn-secondary shadow-none">
-                            <input type="radio" name="options" id="option5"> Web Development
-                        </label>
-                    </div>
-                    -->
-                    <span class="category-item text-light">Selected</span>
-                    <span class="category-item text-light">Graphic Design</span>
-                    <span class="category-item text-light">Illustration</span>
-                    <span class="category-item text-light">Animation</span>
-                    <span class="category-item text-light">Web Development</span>
                     
+                    <span class="category-item category-item-selected" data-filter="*">Selected</span>
+                    <span class="category-item" data-filter=".graphic-design">Graphic Design</span>
+                    <span class="category-item" data-filter=".illustration">Illustration</span>
+                    <span class="category-item " data-filter=".animation">Animation</span>
+                    <span class="category-item" data-filter=".web-dev">Web Development</span>
+                 
 
                 </div>    
             </div>

@@ -294,10 +294,18 @@ p {
 
 
 .category-item {
+    color: #ffffff;
+    background-color: #000000;
     padding: 13px 16px 12px;
-    border: 1px solid #ffffff;
+    border: 1px solid rgba(255, 255, 255, .2);
     border-radius: 46px;
     font-size: 13px;
+    cursor: pointer;
+}
+
+.category-item-selected {
+    color: black;
+    background-color: #ffffff;
 }
 
 .category-item:not(:last-child) {
@@ -305,23 +313,7 @@ p {
     margin-right: .5rem;
 }
 
-/* selected btn css */
-.btn-group-toggle .btn:not(:disabled):not(.disabled).active,
-.btn-group-toggle .btn:not(:disabled):not(.disabled):active,
-.show > .btn.dropdown-toggle {
-    color: #000000;
-    background-color: #ffffff;
-    border-color: #ffffff;
-}
 
-/* non selected btn css */
-.btn-group-toggle .btn {
-    color: #fff;
-    background-color: transparent;
-    border-color: gray;
-    /*padding: 20px 30px;*/
-    border-radius: 0;
-}
 
 
 .category-item {

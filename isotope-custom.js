@@ -38,6 +38,15 @@ $filterButtonGroup.on('click', 'button', function () {
     location.hash = 'filter=' + encodeURIComponent(filterAttr);
 });
 
+// bind filter on radio button click
+$('.scrollable').on( 'click', 'span', function() {
+    // get filter value from input value
+    var filterValue = $(this).attr('data-filter');
+    // use filterFn if matches value
+    filterValue = filterFns[ filterValue ] || filterValue;
+    $grid.isotope({ filter: filterValue });
+  });
+
 var isIsotopeInit = false;
 
 function onHashchange() {

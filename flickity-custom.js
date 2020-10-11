@@ -1,5 +1,3 @@
-
-
 function is_touch_device()
 {
   // Checks for existence in all browsers and IE10/11 & Surface
