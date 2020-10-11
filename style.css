@@ -311,12 +311,13 @@ p {
 .category-item:last-child {
     border-right: 1px solid rgba(114, 124, 135, .2);
  
-}*/
+}
 
 .category-item {
      display: inline-block;
     vertical-align: middle;
 }
+*/
 
 .catergory-overlay-right{
     pointer-events: none;
