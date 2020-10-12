@@ -6,16 +6,18 @@ function is_touch_device()
 
 var navs = document.querySelectorAll('.scrollable');
 
-if (!is_touch_device())
-{
-  for ( var i = 0, length = navs.length; i < length; i++ ) {
-    var nav = navs[i];
-    new Flickity( nav, {
-      cellAlign: 'center',
-      freeScroll: true,
-      prevNextButtons: false,
-      pageDots: false,
-      contain: true,
-    });
-  }
+for ( var i = 0, length = navs.length; i < length; i++ ) {
+  var nav = navs[i];
+  new Flickity( nav, {
+    cellAlign: 'center',
+    freeScroll: true,
+    prevNextButtons: false,
+    pageDots: false,
+    contain: true,
+  });
 }
+
+/*if (!is_touch_device())
+{
+  
+}*/
