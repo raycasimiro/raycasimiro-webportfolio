@@ -16,6 +16,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" type="text/css">
 
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -53,23 +54,23 @@
                 <div class="navbar-collapse collapse blur" id="collapsingNavbar">
                     <ul class="navbar-nav">
                         
-                        <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0">
-                            <a class="nav-link" href="#">Work</a>
+                        <li class="nav-item my-1 my-md-0">
+                            <a class="nav-link" href="#work">Work</a>
                         </li>
 
-                        <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0">
-                            <a class="nav-link" href="#">About</a>
+                        <li class="nav-item my-1 my-md-0">
+                            <a class="nav-link" href="#about">About</a>
                         </li>
-                        <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0">
+                        <li class="nav-item my-1 my-md-0">
 
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                     <li class="nav-item mt-1 mt-md-0 mb-1 mb-md-0 d-block d-sm-block d-md-none d-lg-none d-xl-none">
                         <div class="dropdown-divider"></div>
                     </li>
                     <!-- Social Icons -->
-                    <ul class="navbar-nav ml-auto flex-row mt-3 mt-md-0 mb-3 mb-md-0">
+                    <ul class="navbar-nav ml-auto flex-row my-3 my-md-0">
                         <li class="nav-item mr-5 mr-md-2">
                             <a class="nav-link" href="https://www.instagram.com/raycasimiro/" target="_blank">
                                 <img src="images/igLogo.svg" class="rc-navbar-icons">
@@ -97,11 +98,11 @@
     </div>
 
     <div class="container-fluid rc-wrapper-gallery mx-auto">
-
+        
     
-        <div class="row">
-            <div class="col-12 px-0 ">        
-                <div class="scrollable py-5">
+        <div class="row" id="work" style="padding-top: 4.5rem;">
+            <div class="col-12 px-0">        
+                <div class="scrollable py-5 text-center" style="min-height: 9rem;">
                     <span class="mx-1 mx-lg-0"></span>
                     <span class="mr-2 category-item category-item-selected" data-filter="*">Selected</span>
                     <span class="mr-2 category-item" data-filter=".graphic-design">Graphic Design</span>
@@ -113,7 +114,7 @@
             </div>
         </div>
 
-        <div class="row grid">
+        <div class="row grid" style="min-height: 70vh;">
 
             <div class="col-6 col-md-4 col-lg-3 px-0 rc-gallery-item-overlay grid-item illustration">
                 <picture>
@@ -284,14 +285,30 @@
             </div>
         </div>
 
+
+        <div class="row" id="about" style="min-height: 100vh;">
+            <div class="col-12 px-4 d-flex justify-content-center align-items-center px-lg-0" style="background-color: darkgray; padding-top: 4.5rem;">
+                <span class="text-light" style="font-size: 100px; font-weight: 900; opacity: .2;">ABOUT</span>
+            </div>
+        </div>
+
+        <div class="row" id="contact" style="min-height: 100vh;">
+            <div class="col-12 px-4 d-flex justify-content-center align-items-center px-lg-0" style="background-color: #999999; padding-top: 4.5rem;">
+                <span class="text-light" style="font-size: 100px; font-weight: 900; opacity: .2;">CONTACT</span>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center px-4 px-lg-0" style="min-height: 9rem">
-
             </div>
         </div>
     </div>
 
     <!-- Optional JavaScript -->
+
+
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -307,14 +324,15 @@
     <script src="main.js"></script>
     <script src="modernizr-custom.js"></script>
 
+    <!-- Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="flickity-custom.js"></script>
+
     <!--Isotope JS-->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="isotope-custom.js"></script>
 
-     <!-- Flickity -->
-     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-     <script src="flickity-custom.js"></script>
 
 
 </body>
