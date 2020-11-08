@@ -2,7 +2,7 @@
 {
   // Checks for existence in all browsers and IE10/11 & Surface
   return 'ontouchstart' in window || navigator.maxTouchPoints;
-}*/
+}
 
 var navs = document.querySelectorAll('.scrollable');
 
